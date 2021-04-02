@@ -65,10 +65,11 @@ section.Video h2, section.News h2, section.Music h2, section.Shop h2 {
 section.TTC {
   background: url("../img/Startbild-HOME-min.jpg");
   max-width: 100%;
-  height: auto;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 2.3em;
   text-align: center;
 }
 
@@ -90,18 +91,9 @@ section.TTC p {
   text-align: center;
 }
 
-.wrapper_body {
+.wrapper_body, .wrapper_about {
   background: url("../img/Hintergrund-HOME-zweite-Seite-min.jpg");
   background-size: cover;
-  padding-top: 5em;
-  padding-bottom: 5em;
-}
-
-.wrapper_about {
-  background: url("../img/Hintergrund-ABOUT-min.jpg");
-  height: 100%;
-  background-size: cover;
-  background-position: center;
   padding-top: 5em;
   padding-bottom: 5em;
 }
@@ -201,17 +193,34 @@ section.Members .shop_button {
   text-decoration: none;
 }
 
+section.Members {
+  text-align: center;
+}
+
+.contact_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
 section.contact {
   background: url("../img/Hintergrund-CONTACT-min.jpg");
   max-width: 100%;
-  height: auto;
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  margin-top: 3em;
 }
 
-section.contact h3 {
+section.contact .contact_info {
+  text-align: center;
+  padding-top: 15em;
+  padding-bottom: 5em;
+  font-size: 1.3rem;
+}
+
+section.contact .contact_info h3 {
   letter-spacing: 0.1rem;
 }
 
@@ -240,10 +249,6 @@ footer a {
   html {
     font-size: 18px;
   }
-  section.TTC {
-    padding-top: 10em;
-    padding-bottom: 17em;
-  }
   section.TTC h1 {
     font-size: 4.5rem;
     padding-top: 6em;
@@ -257,10 +262,10 @@ footer a {
     margin-right: auto;
     text-align: center;
   }
-  section.contact {
-    padding-top: 17em;
-    padding-bottom: 17em;
-  }
+  /*section.contact {
+        padding-top: 17em;
+        padding-bottom: 17em;
+    }*/
 }
 
 @media only screen and (max-width: 800px) {
@@ -270,13 +275,15 @@ footer a {
   header a.logo {
     letter-spacing: 0.0rem;
   }
-  section.TTC {
-    padding-top: 13em;
-    background-position: center;
-  }
-  section.contact {
-    background-position: center;
-  }
+  /*
+    section.TTC {
+        padding-top: 13em;
+        background-position: center;
+    }*/
+  /*
+    section.contact {
+        background-position: center;
+    }*/
   .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -299,9 +306,10 @@ footer a {
   header {
     font-size: 12px;
   }
-  section.TTC {
-    padding-top: 6em;
-    background-position: center;
-  }
+  /*
+    section.TTC {
+        padding-top: 6em;
+        background-position: center;
+    }*/
 }
 /*# sourceMappingURL=main.css.map */
